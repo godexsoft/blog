@@ -14,6 +14,7 @@ tags:
 - jekyll
 - blog
 - internet
+comments: []
 ---
 Recently I heard from my friend, Egor Ermakov, about octopress and jekyll.  
 I really liked the idea of maintaining my blog with git and writing posts in any text editor i want
