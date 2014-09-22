@@ -1,0 +1,52 @@
+---
+layout: post
+status: publish
+published: true
+title: Without Exceptions - NDK
+author:
+  display_name: godexsoft
+  login: godexsoft
+  email: godexsoft@gmail.com
+  url: ''
+author_login: godexsoft
+author_email: godexsoft@gmail.com
+wordpress_id: 5
+wordpress_url: http://alex.tapmania.org/?p=5
+date: '2010-09-10 05:24:09 +0100'
+date_gmt: '2010-09-10 05:24:09 +0100'
+categories:
+- Development
+tags:
+- Android
+- C++
+- stl
+- ndk
+---
+Believe it or not, but Android's NDK has disabled Exceptions, RTTI and NO STL by default.
+
+It's a shame, because even though the limitation is inspired by speed concerns one
+can't do much with C++ without exceptions and of course almost nothing without STL.
+
+But hey, what about STLPort and uSTL you would say! --- I have tried to setup
+STLPort and it worked (without compiling the iostreams though).  
+However, some hacks are required to get std::string working.. there is a file from
+the SGI STL which defines pair<>.  
+I have no clue why it's there but that file messed up STLPort's pair<> of course.
+
+So why it's still a fail? Because many game (not only?) engines rely on STL, exceptions and Boost.  
+You can't expect a hardcore engine to be ported easily if you don't offer the core features of C++.
+
+The ultimate solution: **Crystax's NDK**.  
+Go and visit his website [here](http://www.crystax.net/android/ndk-r4.php).  
+In short --- the guy patched the original NDK and added support for Exceptions,
+RTTI and the full blown STL.  
+It works great. My iPhone-centric unit testing library (SimpleUnit) jumped over
+to android within 3 minutes. Go try it yourself.
+
+I'm going to rework my game engine so that it will work on iPhone and Android
+(with recompilation of course).  
+Android is an emerging market and their technology is nice to use
+(as long as you don't touch Eclipse and Java too much).
+With a complete (well, almost complete) C++ I'm happy on Android just like I'm happy on iPhone.
+
+Cheers.

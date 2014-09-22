@@ -1,0 +1,35 @@
+---
+layout: post
+status: publish
+published: true
+title: x2d engine
+author:
+  display_name: godexsoft
+  login: godexsoft
+  email: godexsoft@gmail.com
+  url: ''
+author_login: godexsoft
+author_email: godexsoft@gmail.com
+wordpress_id: 214
+wordpress_url: http://alex.tapmania.org/?p=214
+date: '2012-02-21 17:52:56 +0000'
+date_gmt: '2012-02-21 17:52:56 +0000'
+categories:
+- Development
+tags:
+- Android
+- C++
+- gamedev
+- boost
+- iOS
+- x2d
+comments: []
+---
+Almost one month ago I started working on a new, cross-platform, game engine aimed on modern mobile platforms such as iOS and Android. The main language is (ta-daaaaa) C++, of course.
+A couple of days ago I created a wiki which describes all of the high-level APIs available to developers using x2d (even though x2d is not open sourced yet :) ).
+I already asked some of you in a personal email, however I would like to ask everyone who is reading this and who is interested to check out the wiki and let me know if you have any ideas/pointers regarding usability or design improvements for me to consider.
+
+The wiki is located here: <a href="http://x2d.7bit.co">http://x2d.7bit.co</a>
+Thanks in advance!
+
+Cheers.
