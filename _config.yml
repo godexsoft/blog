@@ -39,6 +39,15 @@ links:
   - title: Tapmania.org
     url: http://tapmania.org
     external: true
+  - title: Binary Buffer
+    url: http://binarybuffer.com
+    external: true 
+  - title: Valera Chevtaev
+    url: http://chupakabr.ru
+    external: true
+  - title: Yana Kremer
+    url: http://yanakremer.com
+    external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Europe/London
