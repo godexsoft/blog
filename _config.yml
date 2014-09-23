@@ -4,6 +4,7 @@ disqus_shortname: godexsoft
 reading_time:     true
 words_per_minute: 250
 url:              http://unusual.life
+excerpt_separator: "<!-- more -->"
 
 # Owner/author information
 owner:

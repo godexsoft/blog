@@ -29,7 +29,23 @@ image:
     {% endif %}
   </header>
   <div class="entry-content">
-    {{ post.content }}
+    {% capture excerpt_len %}{{ post.excerpt | size | minus:1 }}{% endcapture %}
+    {% capture content_len %}{{ post.content | size }}{% endcapture %}
+
+    {% if excerpt_len != content_len %}
+		  {{ post.excerpt }}
+
+      <span class="entry-meta">
+      {% if post.link %}
+      		<span class="entry-date date published updated entry-reading-time pull-left"><a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="Read more"><i class="fa fa-angle-double-right"></i></a> <a href="{{ post.link }}">Read more...</a></span>
+    	{% else %}
+      		<span class="entry-date date published updated entry-reading-time pull-left"><a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}" itemprop="url">Read more...</a></span>
+   		{% endif %}
+      </span>
+
+	{% else %}
+    	{{ post.content }}
+	{% endif %}
   </div><!-- /.entry-content -->
 </article><!-- /.hentry -->
 {% endfor %}

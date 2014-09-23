@@ -42,6 +42,8 @@ The foundation for the randomness is kindly provided by Boost.Random.
 That is because boost is already used in x2d anyways, so why not?  
 It should be easy enough to rewrite the template with any other implementation though.
 
+<!-- more -->
+
 Consider the following code for usage examples:
 
 {% highlight cpp linenos %}
